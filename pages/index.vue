@@ -1,53 +1,23 @@
 <template>
   <div>
     <div class="container-s">
-      <!-- <UsersTable /> -->
-      <!-- <NewUsersTable /> -->
-      <!-- <Table></Table>
-      <Cr></Cr> -->
-      <!-- <UsersCrud/> -->
-      <Cr></Cr> 
+      <Table></Table> 
     </div>
   </div>
 </template>
 
 <script>
 import Swal from "sweetalert2";
-import Users from "../components/Users";
-import Filters from "../components/Filters";
-import { validationMixin } from "vuelidate";
-import AddUserModal from "../components/modals/AddUserModal";
-import UsersCrud from '../components/UsersCrud'
-// import Table from "../components/Table"
-import Cr from "../components/cr"
-import Crop from "../components/crop"
-// import Crud from '../components/crud'
-// import UsersTable from "../components/UsersTable"
-// import NewUsersTable from "../components/NewUsersTable"
-import { required, maxLength, email } from "vuelidate/lib/validators";
+import Table from "../components/Table"
 
 export default {
-  // data: () => ({
-  //   dialog: false,
-  //   simpleDialog: false
-  // }),
   data() {
     return {
 
     }
   },
   components: {
-    UsersCrud,
-    Crop,
-    // Table,
-    Cr
-    // UsersTable,
-    // NewUsersTable
-    // Users,
-    // // Crud,
-    // Filters,
-    // AddUserModal
-    // VEasyDialog
+    Table
   },
   computed: {
    
